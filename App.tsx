@@ -136,7 +136,7 @@ const App: React.FC = () => {
         {/* Social Quick Links */}
         <div className="flex justify-center gap-8 mb-12">
           <a 
-            href="https://github.com/xploitforceofficial-stack" 
+            href="https://github.com/xploitforceofficial" 
             target="_blank" 
             rel="noopener noreferrer" 
             onClick={() => handleLinkClick('github')}
