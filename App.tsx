@@ -146,7 +146,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                    <h3 className="text-xl font-bold">Backdoor Map</h3>
-                   <p className="text-sm text-gray-400">Explore the custom realm</p>
+                   <p className="text-sm text-gray-400">Enjoy xploiting in my backdoor map</p>
                 </div>
               </div>
               <LinkButton 
