@@ -250,8 +250,30 @@ const App: React.FC = () => {
               </div>
               <div className="flex items-center gap-1 text-[10px] text-gray-500 font-bold uppercase">
                 <Gamepad2 className="w-3 h-3" />
-                <span>{clickStats['roblox_profile'] || 0} Visits</span>
+                <span>{(clickStats['roblox_profile'] || 0) + (clickStats['roblox_music_id'] || 0)} Visits</span>
               </div>
+            </div>
+            <div className="glass-card rounded-[2.5rem] overflow-hidden p-3 transition-all hover:border-blue-500/30">
+              <div className="relative aspect-square sm:aspect-video rounded-[2rem] overflow-hidden mb-4">
+                <img
+                  src="https://files.catbox.moe/sjlpvw.jpeg"
+                  alt="Roblox Music ID Indonesian"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                   <h3 className="text-xl font-bold">Roblox Music ID Indonesian</h3>
+                   <p className="text-sm text-gray-400">Explore the Indonesian Music ID</p>
+                </div>
+              </div>
+              <LinkButton
+                href="https://rblxid.vercel.app/"
+                title="Open Roblox Music ID Indonesian"
+                variant="glass"
+                icon={<ExternalLink className="w-5 h-5" />}
+                clickCount={clickStats['roblox_music_id']}
+                onClick={() => handleLinkClick('roblox_music_id')}
+              />
             </div>
             <LinkButton 
               href="https://www.roblox.com/users/6023480353/profile" 
