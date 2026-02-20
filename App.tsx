@@ -267,7 +267,7 @@ const App: React.FC = () => {
                 </div>
               </div>
               <LinkButton
-                href="https://rblxid.vercel.app/"
+                href="https://rblxid.tuffgv.my.id/"
                 title="Open Roblox Music ID Indonesian"
                 variant="glass"
                 icon={<ExternalLink className="w-5 h-5" />}
